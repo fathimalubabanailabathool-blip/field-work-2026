@@ -1,0 +1,413 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f8f5;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+.navbar {
+    background: #163b2c;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #d9bd78;
+}
+
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(
+        rgba(10, 35, 24, .75),
+        rgba(10, 35, 24, .75)
+    ), url("images/ilkal.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d9bd78;
+    color: #163b2c;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #163b2c;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000012;
+    padding-bottom: 25px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #216344;
+    margin: 18px 0 10px;
+}
+
+.card p {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.findings {
+    background: #eaf0e9;
+}
+
+.finding-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.finding-grid div {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.finding-grid h3 {
+    color: #216344;
+    margin: 10px 0;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team h3 {
+    background: #163b2c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #163b2c;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .finding-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .finding-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FIELD WORK PHOTO GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000015;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* VILLAGE EXPLORATION */
+
+.village-section {
+    background: #f0f4ed;
+}
+
+.subtitle {
+    color: #b18a42;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.village-intro {
+    max-width: 800px;
+    margin: auto;
+}
+
+.village-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.detail-box {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.detail-box h3 {
+    color: #216344;
+    margin-bottom: 12px;
+}
+
+.ilkal-image {
+    margin-top: 35px;
+}
+
+.ilkal-image img {
+    width: 100%;
+    max-width: 850px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media(max-width: 600px) {
+    .village-details {
+        grid-template-columns: 1fr;
+    }
+
+    .ilkal-image img {
+        height: 250px;
+    }
+}
+
+.history-note {
+    background: #fff;
+    border-left: 5px solid #b18a42;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.history-note h3 {
+    color: #216344;
+    margin-bottom: 10px;
+}
+
+.findings {
+    background: #eaf0e9;
+}
+
+.findings > p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.finding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.finding-grid div {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.finding-grid h3 {
+    color: #216344;
+    margin-bottom: 12px;
+}
+
+@media(max-width: 768px) {
+    .finding-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 480px) {
+    .finding-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 14-DAY FIELDWORK TIMELINE */
+
+.timeline-section {
+    background: #f7f8f5;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    border-left: 3px solid #b18a42;
+    padding-left: 30px;
+}
+
+.timeline-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #00000010;
+    position: relative;
+}
+
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 28px;
+    width: 15px;
+    height: 15px;
+    background: #216344;
+    border: 3px solid #f7f8f5;
+    border-radius: 50%;
+}
+
+.timeline-card span {
+    color: #b18a42;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.timeline-card h3 {
+    color: #216344;
+    margin: 10px 0;
+}
+
+.timeline-note {
+    font-weight: bold;
+    color: #216344;
+    margin-top: 25px;
+}
+
+@media(max-width: 480px) {
+    .timeline {
+        padding-left: 22px;
+    }
+
+    .timeline-card::before {
+        left: -32px;
+    }
+}
