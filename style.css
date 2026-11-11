@@ -411,3 +411,21 @@ footer {
         left: -32px;
     }
 }
+
+.finding-content {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.finding-content h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.finding-content p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
